@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="src/output.css" rel="stylesheet">
+</head>
+<body class="bg-[#030712]">
+    <main>
+        <!--form-->
+        <h2 class="text-center text-white font-[500] text-4xl mt-6">Form</h2>
+            <div class="flex flex-col gap-6 border border-[#00bcff] w-full max-w-[410px] mx-2 rounded-[10px] py-15 justify-center items-center mx-auto mt-9 ">
+                <input id="productimage" class="bg-white w-full max-w-[350px] h-[40px] pl-2 rounded-[5px]" type="url" />
+                <input id="producttitle" class="bg-white w-full max-w-[350px] h-[40px] pl-2 rounded-[5px]" type="text" placeholder="Title" />
+                <input id="productdescription" class="bg-white w-full max-w-[350px] h-[40px] pl-2 rounded-[5px]" type="text" placeholder="Description" />
+                <input id="productprice" class="bg-white w-full max-w-[350px] h-[40px] pl-2 rounded-[5px]" type="number" placeholder="Price" />
+                <input id="productcategory" class="bg-white w-full max-w-[350px] h-[40px] pl-2 rounded-[5px]" type="text" placeholder="Category" />
+                <button onclick="addtocards()" class="bg-[#00bcff] text-[#030712] w-[130px] h-[40px] rounded-[5px]">Add to Cards</button>
+            </div>
+        <!--form-->
+        <!--cards-->
+        <h2 class="text-4xl text-center text-white pt-10 font-[500]">Cards</h2>
+
+       <div id="cardscontainer" class="flex justify-center items-center flex-wrap gap-8 mt-20">
+        
+       
+       </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
